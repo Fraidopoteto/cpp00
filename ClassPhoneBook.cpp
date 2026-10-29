@@ -43,22 +43,12 @@ void PhoneBook::search()
 
 void PhoneBook::add()
 {
-	bool		max_amount;
-
 	std::string	first_name;
 	std::string	last_name;
 	std::string	nickname;
 	std::string	phone_number;
 	std::string	darkest_secret;
 
-	if (contact_count == 0)
-		max_amount = false;
-
-	if (contact_count == 8)
-	{
-		contact_count = 0;
-		max_amount = true;
-	}
 
 	std::cout << "first name: ";
 	std::getline(std::cin, first_name);
